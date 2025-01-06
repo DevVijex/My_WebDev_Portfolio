@@ -929,7 +929,7 @@ transition: bottom .4s, transform .4s;
   }
   .nav__list{
     flex-direction: column;
-    row-gap:1.25rem;
+    row-gap: 1.25rem;
   }
   .footer{
     padding-block: 3rem;
