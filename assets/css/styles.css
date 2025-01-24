@@ -125,7 +125,7 @@ img {
 }
 
 /*=============== NAV ===============*/
-.nav{
+/* .nav{
   position:fixed;
   bottom:1.5rem;
   left: 0;
@@ -155,7 +155,44 @@ img {
   display: grid;
   place-items:center;
   transition: background-color .6s; 
+} */
+
+.nav {
+  position: fixed;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  background-color: hsla(0, 0%, 98%, 0.1);
+  padding: 1rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 2rem;
+  z-index: var(--z-fixed);
 }
+
+.nav__list {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  gap: 1rem; /* Add space between items */
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color:var(--white-color);/* Replace with your color variable or value */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: var(--your-hover-color, #007bff); /* Replace with your hover color variable or value */
+}
+
+
 /* Active link */
 .active-link{
   background-color: var(--first-color);
